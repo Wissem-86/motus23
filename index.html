@@ -63,6 +63,15 @@
         <h1 id="answer"></h1>
         <br>
         <a href = "#retour" class="rg">Retour aux régles</p> <!-- ajouter un lien ancre pour revenir aux régles du jeu -->
+        <button id="refresh-btn">Recommancer</button>
+    <script>
+        const refreshBtn = document.querySelector('#refresh-btn');
+
+        refreshBtn.addEventListener('click', () => {
+        location.reload();
+        });
+
+    </script>
 
     </body>
 </html>
