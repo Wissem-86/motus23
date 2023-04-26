@@ -1,8 +1,8 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: black;
-    color: white;
+body { /* réglage du style du body */
+    font-family: Helvetica; /* définir la typo utilisé */
+    text-align: center; /* aligner tous le contenu au milieu */
+    background-color: black; /* déinir un fond d'écran noir  */
+    color: white; /* définir la couleur principal du texte */
 
 }
 
@@ -15,28 +15,27 @@ body {
 }
 
 #board {
-    width: 400px;
-    height: 500px;
-    margin: 0 auto;
+    width: 400px; /* réglage de la largeur de la grille */
+    height: 600px;  /* réglage de la hauteur de la grille */
+    margin: 0 auto; 
     margin-top: 3px;
     display: flex;
     flex-wrap: wrap;
-    cursor: text;
-    caret-color: green;
-    animation: cursor-blink 1s infinite;
-    background-color: blue;
-
+    cursor: text; /* créer un curseur au position des cases */
+    caret-color: green; /*définir la couleur du curseur*/
+    animation: cursor-blink 1s infinite; /* définir l'animation du curseur */
+    background-color: blue; /* définir la couleur du fond de la grille */
 
 }
 
 .tile {
-    /* Box */
+    /* Style de la grille */
     border: 2px solid lightgray;
     width: 64px;
     height: 60px;
     margin: 3.7px;
 
-    /* Text */
+    /* Style du Texte */
     color: white;
     font-size: 36px;
     font-weight: bold;
@@ -48,7 +47,7 @@ body {
 }
 
 
-.correct {
+.correct { /* définir le style des lettres correctes et bien placé */
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -63,7 +62,7 @@ body {
     
 }
 
-.present {
+.present { /* définir le style des lettres preésente dans le mot mais mal placé */
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -77,7 +76,7 @@ body {
     border: 4px solid white;
 }
 
-.absent {
+.absent { /* définir le style des lettre absentes dans le mot */
     display: inline-block; 
     width: 60px;
     height: 60px;
@@ -91,7 +90,7 @@ body {
     border: 4px solid white;
 }
 
-.a {
+.a { /* définir le style de la première régle du jeu */
     display: inline-block; width: 20px;
     height: 20px; 
     line-height: 20px; 
@@ -99,12 +98,12 @@ body {
     font-size: 15px; 
     font-weight: bold; 
     color: white; 
-    background-color: green; 
+    background-color: red;
     border-radius: 50%; 
     border: 4px solid white;
     margin-bottom: 10px;
 }
-.b {
+.b { /* définir le style de la deuxième régle du jeu */
     display: inline-block; width: 20px;
     height: 20px; 
     line-height: 20px; 
@@ -117,7 +116,7 @@ body {
     border: 4px solid white;
     margin-bottom: 10px;
 }
-.c {
+.c { /* définir le style de la troisième régle du jeu */
     display: inline-block; width: 20px;
     height: 20px; 
     line-height: 20px; 
@@ -130,7 +129,7 @@ body {
     border: 4px solid white;
     margin-bottom: 10px;
 }
-.d {
+.d { /* définir le style de la quatrième régle du jeu */
     display: inline-block; width: 20px;
     height: 20px; 
     line-height: 20px; 
@@ -143,7 +142,7 @@ body {
     border: 4px solid white;
     text-transform: lowercase;
 }
-.regle {
+.regle { /* définir le style de la section réglex du jeu */
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
     position: relative;
     padding: 1rem 1rem;
@@ -158,20 +157,23 @@ body {
     margin-bottom: 10px;
 
 }
-#regletitle{
+#regletitle{ /* définir le style du titre règles du jeu */
         background-color: orange;
-        margin-bottom: -13px;
+        margin-bottom: -15px;
+}
+.rg {
+    color: orange;
 }
 
 
-.keyboard-row {
+.keyboard-row { /* définir le style du clavier */
     width: 400px;
 
     margin: 0 auto;
     display: flex;
 }
 
-.key-tile {
+.key-tile { /* définir le style des touches lettres du clavier */
     width: 36px;
     height: 40px;
     margin: 1px;
@@ -185,7 +187,7 @@ body {
     align-items: center;
 }
 
-.enter-key-tile {
+.enter-key-tile { /* définir le style de la touche enter du clavier */
     width: 76px;
     height: 40px;
     margin: 1px;
@@ -193,7 +195,7 @@ body {
     background-color: green;
     color: white;
 
-    /* Text */
+    /*Définir le style du texte de la touche enter */
     font-size: 20px;
     font-weight: bold;
     display: flex;
