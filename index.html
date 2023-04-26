@@ -1,34 +1,33 @@
-
-
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />  <!-- balise link pour acceder aux icones cdnjs.cloudflare.com -->
 
-        <title>Wordle</title>
+        <title>Jouer gratuitement à Motus</title> <!--meta title-->
+        <meta name="description" content="L'application Motus reprend les principes de l'émission. Le but du jeu est de retrouver un mot composé d'un nombre de lettres fixe">  <!-- meta description-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
 
-        <link rel="stylesheet" href="wordle.css">
-        <script src="wordle.js"></script>
+        <link rel="stylesheet" href="motus.css"> <!--appel au fichier css -->
+        <script src="motus.js"></script> <!-- appel au fichier JS-->
     </head>
 
     <body>
-        <audio id="myAudio" autoplay="autoplay">
-  <source src="play.mp3">
+        <audio id="myAudio" autoplay="autoplay">  <!-- ajout d'un son au démarage de la page -->
+  <source src="son.mp3"> 
 
 </audio>
 
 
 
-<button onclick="toggleMute()">
+<button onclick="toggleMute()"> <!-- ajouter un bouton mute pour arreter le son par l'utilisateur -->
   <span id="muteIcon" class="fas fa-volume-up"></span>
 </button>
 
-    <script>
+    <script> 
         var myAudio = document.getElementById("myAudio");
         var muteIcon = document.getElementById("muteIcon");
 
-    function toggleMute() {
+    function toggleMute() { //fonction js pour faire mut avec le bouton deja créé
         if (myAudio.muted) {
         myAudio.muted = false;
         muteIcon.classList.remove("fa-volume-mute");
@@ -43,10 +42,10 @@
 
 
 
-        <img id="retour" src="motus.gif">
+        <img id="retour" src="motus.gif"> <!-- ajouter une image animé  -->
         <h1 id="title">Jouer à Motus</h1>
-        <h2 id="regletitle"> Règle du jeu</h2>
-        <ul class="regle">
+        <h2 id="regletitle"> Règles du jeu</h2> 
+        <ul class="regle"> <!-- définir une classe régle pour le styliser -->
             <li> <span class="a">A</span>  La lettre est bien placée</li>
             <li ><span class="b">B</span>  La lettre est présente mais mal placée</li>
             <li><span class="c">C</span>  La lettre n'est pas présente dans le mot</li>
@@ -54,7 +53,7 @@
 
         </ul>
         <br>
-        <a href="#commencer"><img src="jouer.gif"></a> 
+        <a href="#commencer"><img src="jouer.gif"></a>  <!-- ajouter un lien ancre pour commencer à jouer -->
 
         <br>
         <br  id=commencer>
@@ -63,7 +62,7 @@
         <br>
         <h1 id="answer"></h1>
         <br>
-        <a href = "#retour">Retour aux régles</p>
+        <a href = "#retour" class="rg">Retour aux régles</p> <!-- ajouter un lien ancre pour revenir aux régles du jeu -->
 
     </body>
 </html>
